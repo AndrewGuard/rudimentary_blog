@@ -1,0 +1,7 @@
+<div class="container">
+	<h1> Post </h1>
+	<% @all_posts.each do |post| %>
+		<p> <%= post.title %> </p>
+		<p> <%= post.body %> </p>
+	<% end %>
+</div>
