@@ -1,0 +1,13 @@
+<div class="container">
+	<h1> Editar tu Post, Boludo </h1>
+
+	<form action="/new_post" method="post">
+
+		<label for="title"> Title: </label>
+		<input id="title" type="text" name="title" value=<%=@post.title%>><br><br>
+
+		<textarea rows="4" name="body" cols="50" value=<%=@post.body%>> </textarea>
+
+		<input type="submit" value="Add your post!">
+  </form>
+</div>

@@ -3,7 +3,8 @@
   <p> Edifying Speeches </p>
 
   <% @all_posts_index.each do |post| %>
-		<p> <%= post.title %> </p>
+		<p> <a href="/post/<%= post.id %>"><%= post.title %></a> </p>
+		<td><a href=<%= "/post/#{post.id}/delete"%> >DELETE</a></td>
 	<% end %>
 </div>
 

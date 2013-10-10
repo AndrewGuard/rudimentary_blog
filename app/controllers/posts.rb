@@ -16,3 +16,19 @@ get '/index_page' do
   @all_posts_index = Post.all
   erb :all_posts_index
 end
+
+get '/post/:id' do
+  @post = Post.find(params[:id])
+  erb :post
+end
+
+get '/post/:id/edit' do
+  @post = Post.find(params[:id])
+  erb :edit_page
+end
+
+get '/post/:id/delete' do
+  @post = Post.find(params[:id])
+  @post.destroy
+  erb :index
+end
