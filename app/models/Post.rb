@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
-  # Remember to create a migration!
+  validates :title, presence: true
+  validates :body, presence: true
+
   has_many :tags, through: :post_categories
 end
