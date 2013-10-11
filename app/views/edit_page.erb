@@ -1,13 +1,13 @@
 <div class="container">
-	<h1> Editar tu Post, Boludo </h1>
+	<h1> Edit your post, Boludo </h1>
 
 	<form action="/new_post" method="post">
 
 		<label for="title"> Title: </label>
 		<input id="title" type="text" name="title" value=<%=@post.title%>><br><br>
 
-		<textarea rows="4" name="body" cols="50" value=<%=@post.body%>> </textarea>
+		<textarea rows="4" name="body" cols="50" > <%=@post.body%> </textarea>
 
-		<input type="submit" value="Add your post!">
+		<input type="submit" value="Edit your post!">
   </form>
 </div>
