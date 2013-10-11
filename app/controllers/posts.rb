@@ -4,6 +4,8 @@ end
 
 post '/new_post' do
 	@post = Post.create(title: params[:title], body: params[:body])
+	# @tag = Tag.create(tag: params[:tag])
+	# @post_cat = PostCategory.create(@post.id, @tag.id)
 	erb :post
 end
 
